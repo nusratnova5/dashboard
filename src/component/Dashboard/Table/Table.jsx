@@ -4,10 +4,10 @@ import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 
 const Table = () => {
     return (
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto mt-12">
   <table className="table table-xs">
     <thead>
-      <tr>
+      <tr className='bg-blue text-base font-semibold text-center' >
         <th>Name</th>
         <th>User ID</th>
         <th>User Status</th>
@@ -17,48 +17,48 @@ const Table = () => {
         <th>Action</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>Victoria Perez</td>
+    <tbody className='text-center bg-white'>
+      <tr className='text-navy-blue'>
+        <td className='p-5 flex justify-center items-center font-semibold'>Victoria Perez</td>
         <td>LA-0234</td>
         <td>Lorem Ipsum</td>
         <td>30 Apr, 2017 to 24 Oct 2020</td>
         <td>Lorem Ipsum</td>
         <td>Lorem Ipsum</td>
-        <td className='flex gap-3'>
-            <IoMdCheckmarkCircleOutline/> <FiTrash2/> 
+        <td className='flex gap-3 text-base justify-center text-gray'>
+            <IoMdCheckmarkCircleOutline className=''/> <FiTrash2/> 
         </td>
       </tr>
-      <tr>
-        <td>Lena Page</td>
+      <tr className='text-navy-blue'>
+        <td className='p-5 flex justify-center items-center font-semibold'>Lena Page</td>
         <td>LA-0234</td>
         <td>Lorem Ipsum</td>
         <td>21 Aug, 2019 to 24 Oct 2020</td>
         <td>Lorem Ipsum</td>
         <td>Lorem Ipsum</td>
-        <td className='flex gap-3'>
+        <td className='flex gap-3 text-base justify-center text-gray'>
             <IoMdCheckmarkCircleOutline/> <FiTrash2/> 
         </td>
       </tr>
-      <tr>
-        <td>Devin Harmor</td>
+      <tr className='text-navy-blue'>
+        <td className='p-5 flex justify-center items-center font-semibold'>Devin Harmor</td>
         <td>LA-0234</td>
         <td>Lorem Ipsum</td>
         <td>21 July, 2019 to 24 Oct 2020</td>
         <td>Lorem Ipsum</td>
         <td>Lorem Ipsum</td>
-        <td className='flex gap-3'>
+        <td className='flex gap-3 text-base justify-center text-gray'>
             <IoMdCheckmarkCircleOutline/> <FiTrash2/> 
         </td>
       </tr>
-      <tr>
-        <td>Rena Paul</td>
+      <tr className='text-navy-blue'> 
+        <td className='p-5 flex justify-center items-center font-semibold'>Rena Paul</td>
         <td>LA-0234</td>
         <td>Lorem Ipsum</td>
         <td>30 Apr, 2017 to 24 Oct 2020</td>
         <td>Lorem Ipsum</td>
         <td>Lorem Ipsum</td>
-        <td className='flex gap-3'>
+        <td className='flex gap-3 text-base justify-center text-gray'>
             <IoMdCheckmarkCircleOutline/> <FiTrash2/> 
         </td>
       </tr>

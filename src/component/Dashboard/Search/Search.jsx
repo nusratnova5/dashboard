@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import bgimg from '/images/bg-2.png'
-import img from '/images/bg-1.png'
-import { FaSearch } from 'react-icons/fa';
+import { FaPlus, FaSearch } from 'react-icons/fa';
 import { HiOutlineAdjustmentsHorizontal } from 'react-icons/hi2';
 
 const Search = ({ setSearchQuery }) => {
@@ -10,20 +8,22 @@ const Search = ({ setSearchQuery }) => {
         setSearchQuery(inputValue)
     }
     return (
-        <div className='bg-white mb-6'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 m-4 h-full p-5 gap-10 rounded-lg'>
+        <div className='mb-6'>
+            <p className='mt-10 font-medium text-xl mb-2'>Users</p>
+            <div className='grid grid-cols-1 lg:grid-cols-2 mb-5 h-full gap-10 rounded-lg'>
                 <div className="relative items-center p-1 hidden lg:flex">
                     <input
                         type="text"
                         onInput={(e) => setInputValue(e.target.value)}
                         placeholder="Search"
-                        className="w-full bg-gray border-none pl-12 placeholder-text-sm px-4 py-3 rounded-xl"
+                        className="w-full bg-white border-none pl-12 placeholder-text-sm px-4 py-3 rounded-xl"
                     />
-                    <FaSearch className="absolute left-3 top-1/2  transform -translate-y-1/2 text-gray-500" />
+                    <FaSearch className="absolute left-3 top-1/2  transform -translate-y-1/2 text-light-gray" />
                 </div>
-                <div className='flex'>
-                    <button>Add</button>
-                    <select className="select max-w-xs">
+                <div className='flex gap-2 justify-center items-center'>
+                    <button className='btn bg-dark-blue text-white px-3 rounded-md flex justify-center items-center gap-3'>Add User<FaPlus/>
+                    </button>
+                    <select className="select max-w-xs bg-transparent">
                         <option disabled selected>Sort by </option>
                         <option>Homer</option>
                         <option>Marge</option>
@@ -31,7 +31,7 @@ const Search = ({ setSearchQuery }) => {
                         <option>Lisa</option>
                         <option>Maggie</option>
                     </select>
-                    <select className="select max-w-xs">
+                    <select className="select max-w-xs bg-transparent">
                         <option disabled selected>Saved Search</option>
                         <option>Homer</option>
                         <option>Marge</option>
@@ -39,7 +39,7 @@ const Search = ({ setSearchQuery }) => {
                         <option>Lisa</option>
                         <option>Maggie</option>
                     </select>
-                    <HiOutlineAdjustmentsHorizontal/>
+                    <HiOutlineAdjustmentsHorizontal className='text-2xl'/>
                 </div>
             </div>
             <div className="relative items-center p-1 lg:hidden flex mx-9 pb-4">

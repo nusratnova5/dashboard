@@ -31,7 +31,7 @@ const Dashboard = () => {
             });
     }, [searchQuery]);
     return (
-        <div>
+        <div className=''>
             <Search setSearchQuery={setSearchQuery} />
             <Cards/>
             <Table/>

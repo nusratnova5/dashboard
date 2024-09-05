@@ -25,10 +25,10 @@ const Cards = () => {
             <div className='flex gap-3 text-nowrap'>
             {
                 cardInfo?.map((item) =>{
-                    return <div className='grid grid-cols-4 bg-white'>
-                        <div className=''>
-                        <p>{item?.text}</p>
-                        <p>{item?.number}</p>
+                    return <div className='grid grid-cols-4 bg-white rounded-lg'>
+                        <div className='p-5'>
+                        <p className='text-medium-gray'>{item?.text}</p>
+                        <p className='font-bold text-2xl'>{item?.number}</p>
                         </div>
                     </div>
 
