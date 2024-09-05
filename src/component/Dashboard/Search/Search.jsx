@@ -17,9 +17,9 @@ const Search = ({ setSearchQuery }) => {
                         type="text"
                         onInput={(e) => setInputValue(e.target.value)}
                         placeholder="Search"
-                        className="w-full bg-gray border-none placeholder-text-sm px-4 py-3 rounded-xl"
+                        className="w-full bg-gray border-none pl-12 placeholder-text-sm px-4 py-3 rounded-xl"
                     />
-                    <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
+                    <FaSearch className="absolute left-3 top-1/2  transform -translate-y-1/2 text-gray-500" />
                 </div>
                 <div className='flex'>
                     <button>Add</button>
