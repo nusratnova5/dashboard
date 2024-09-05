@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$light-red: #FFECEA;
+$dark-red: #F15E4A;
+$dark-black: #152A16;
+$light-black: #232F3C;
+$midnight-black: #1A2531;
+$dark-gray: #5C635A;
+$light-gray: rgba(149, 159, 163, 1);//
+$medium-gray: #D1D1D1;
+$charcoal-gray: #1F2833;
+$gray: #EEF2F5;
+$dark-blue: #156BCA;
+$light-blue: #D4E9FF;
+$sky-blue: #4285F3;
+$charcoal: #2E3439;
+$White: rgba(255, 255, 255, 1);//
+
+.bg-white{
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.bg-light-red {
+  background-color: $light-red;
+}
+
+.bg-charcoal-gray {
+  background-color: $charcoal-gray;
+}
+
+.bg-light-blue {
+  background-color: $light-blue;
+}
+
+.bg-dark-blue {
+  background-color: $dark-blue;
+}
+
+.bg-sky-blue {
+  background-color: $sky-blue;
+}
+
+.bg-light-gray {
+  background-color: $light-gray;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+
+.text-charcoal {
+  color: $charcoal;
+}
+
+.text-dark-red {
+  color: $dark-red;
+}
+
+.text-blue {
+  color: $dark-blue;
+}
+
+.border-gray {
+  border-color: $light-gray;
+}
+
+.text-dark-blue {
+  color: $dark-blue;
+}
+
+.text-dark-black {
+  color: $dark-black;
+}
+
+.text-midnight-black {
+  color: $midnight-black;
+}
+
+.text-medium-gray {
+  color: $medium-gray;
+}
+
+.text-dark-gray {
+  color: $dark-gray !important;
+}
+
+.text-light-gray {
+  color: $light-gray;
+}
+
+.text-sky-blue {
+  color: $sky-blue;
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1f2937;
+  background: white;
+}
+
+.therapists {
+  .slick-track {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.drawer-background {
+  background-image: url('/images/auth-2.jpeg');
+  /* Path relative to the public folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.auth_slider-container {
+  .slick-slider,
+  .slick-list,
+  .slick-track,
+  .slick-slide,
+  .slick-slide>div {
+    height: 100%;
+  }
+
+  .slick-slider {
+    position: relative;
+  }
+
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  color: $dark-blue;
+}
+
+.menu .active {
+  color: $dark-black !important;
+  background: $light-blue !important;
+  font-weight: 500;
+  border-radius: 0;
+  border-left: 5px solid $dark-black;
+}
+
+.therapist-cart:hover {
+  .btn {
+    background: $dark-blue;
+    color: #fff;
+  }
+}
+
+/* Custom scrollbar styles for WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar (for horizontal scrollbars) */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Background of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Background of the scrollbar thumb on hover */
+}
+
+/* Custom scrollbar styles for Firefox */
+* {
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar thumb and track */
+}

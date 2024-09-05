@@ -1,8 +1,42 @@
-# React + Vite
+# E-Therapist
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web application built based on searching therapist. It includes login functionality using Firebase, client-side routing with react-router-dom, and dynamic data display. Tailwind CSS is used for styling the components.
 
-Currently, two official plugins are available:
+## Technologies Used
+- React.js
+- Firebase for authentication
+- react-router-dom for routing
+- Tailwind CSS for styling
+- Static JSON for dynamic data
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+1. Clone the repository
+    ```sh
+    git clone https://github.com/nusratnova5/e-therapists
+    ```
+
+2. Navigate to the project directory
+    ```sh
+    cd e-therapists
+    ```
+
+3. Install dependencies
+    ```sh
+    npm install
+    ```
+
+5. Start the development server
+    ```sh
+    npm run dev
+    ```
+
+## Deployment
+The application is deployed on Vercel. You can view the live demo [here](https://e-therapist.vercel.app).
+
+## Usage
+1. Open the application in your browser.
+2. Navigate to the login page and log in using your credentials.
+3. Upon successful login, you will be redirected to the main content page.
+4. Use the search functionality to filter and view dynamic data.
+```
