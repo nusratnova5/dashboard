@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-$dark-gray: rgba(98, 108, 112, 1);//
-$light-gray: rgba(149, 159, 163, 1);//
+$dark-gray: rgba(98, 108, 112, 1);
+$light-gray: rgba(149, 159, 163, 1);
 $medium-gray: rgba(143, 155, 179, 1);
 $lightest-gray: rgba(242, 243, 244, 1);
 $gray: rgba(197, 206, 224, 1);
-$dark-blue: rgba(14, 95, 217, 1);//
+$dark-blue: rgba(14, 95, 217, 1);
 $blue: rgba(240, 246, 255, 1);
 $light-blue: rgba(239, 244, 250, 1);
-$red: rgba(255, 213, 153, 1);//
-$White: rgba(255, 255, 255, 1);//
-$charcoal-gray: rgba(242, 243, 244, 0.5);//
+$red: rgba(255, 213, 153, 1);
+$white: rgba(255, 255, 255, 1);
+$bluish-white: #F5F6F7;
+$charcoal-gray: rgba(242, 243, 244, 0.5);
 $navy-blue:rgba(34, 43, 69, 1);
+
+
+.bg-bluish-white{
+  background-color: $bluish-white;
+}
 
 .bg-charcoal-gray{
   background-color: $charcoal-gray;
@@ -58,7 +64,6 @@ $navy-blue:rgba(34, 43, 69, 1);
 
 body {
   font-family: "Poppins", sans-serif;
-  background:$lightest-gray;
 }
 .menu .active {
   color: $blue !important;

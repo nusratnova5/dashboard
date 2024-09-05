@@ -14,7 +14,7 @@ const infoFirst = [
         title: "Dashboard",
     },
     {
-        icon: <MdBarChart />,
+        icon: <MdBarChart className='text-dark-blue' />,
         title: "Users Management",
         to: ""
     },

@@ -9,12 +9,12 @@ const DashboardLayout = () => {
         setIsOpenIsdebar(!isOpenSidebar);
     }
     return (
-        <div className='h-screen overflow-hidden flex flex-col bg-white'>
+        <div className='h-screen overflow-hidden flex flex-col'>
             <div className='flex flex-1 overflow-hidden'>
-                <div >
+                <div className='bg-white'>
                     <SideBar toggleSidebar={toggleSidebar} isOpenSidebar={isOpenSidebar} />
                 </div>
-                <div className='lg:p-10 lg:pt-20 pt-20 bg-slate-100 flex-1 overflow-y-scroll h-full' >
+                <div className='lg:p-10 lg:pt-20 pt-20 bg-bluish-white flex-1 overflow-y-scroll h-full' >
                     <DashboardHeader toggleSidebar={toggleSidebar} isOpenSidebar={isOpenSidebar}></DashboardHeader>
                     <Outlet />
                 </div>

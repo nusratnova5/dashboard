@@ -57,9 +57,6 @@ const DashboardHeader = ({ toggleSidebar }) => {
                 <CiGrid41 className='text-3xl' />
                 <IoNotificationsOutline className='text-3xl' />
                 <img src={profile} className='bg-red rounded-full p-1'></img>
-
-
-
             </div>
         </div>
     );
