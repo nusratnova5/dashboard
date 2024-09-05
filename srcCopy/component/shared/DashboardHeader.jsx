@@ -9,7 +9,15 @@ import { CiGrid41 } from 'react-icons/ci';
 import profile from '../../assets/Images/avater.png'
 
 const DashboardHeader = ({ toggleSidebar }) => {
-    const [selected, setSelected] = useState("US");
+    const [selected, setSelected] = useState("");
+
+    const navigate = useNavigate();
+
+    const handleLogout = async () => {
+        await signOut();
+        navigate('/login');
+    };
+
     return (
         <div className="navbar bg-white fixed px-2 py-0 lg:px-10 z-10 top-0 left-0 lg:left-80 w-auto right-0">
             <div className="flex-1">
@@ -47,10 +55,7 @@ const DashboardHeader = ({ toggleSidebar }) => {
                     />
                 </div>
                 <CiGrid41 className='text-3xl' />
-                <div className='relative'>
-                    <IoNotificationsOutline className='text-xl' />
-                    <div className='w-3 h-3 bg-red-600 rounded-full absolute top-0 right-0 border border-2 border-white'></div>
-                </div>
+                <IoNotificationsOutline className='text-3xl' />
                 <img src={profile} className='bg-red rounded-full p-1'></img>
             </div>
         </div>

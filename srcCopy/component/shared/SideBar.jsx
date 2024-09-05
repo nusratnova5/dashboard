@@ -16,6 +16,7 @@ const infoFirst = [
     {
         icon: <MdBarChart className='text-dark-blue' />,
         title: "Users Management",
+        to: ""
     },
     {
         icon: <FiCalendar />,
@@ -107,7 +108,7 @@ const SideBar = ({ isOpenSidebar, toggleSidebar }) => {
                             {item.dropdownItems && activeDropdown === item.title && (
                                 <ul className="ml-4 mt-2 space-y-1">
                                     {item.dropdownItems.map((dropdownItem, idx) => (
-                                        <li key={idx} className='flex justify-between items-start p-2 hover:bg-gray-200 rounded-md'>
+                                        <li key={idx} className='flex justify-between items-center p-2 hover:bg-gray-200 rounded-md'>
                                             <span>{dropdownItem.label}</span>
                                         </li>
                                     ))}
@@ -137,7 +138,7 @@ const SideBar = ({ isOpenSidebar, toggleSidebar }) => {
                             {item.dropdownItems && activeDropdown === item.title && (
                                 <ul className="ml-4 mt-2 space-y-1">
                                     {item.dropdownItems.map((dropdownItem, idx) => (
-                                        <li key={idx} className='flex justify-between items-start p-2 hover:bg-gray-200 rounded-md'>
+                                        <li key={idx} className='flex justify-between items-center p-2 hover:bg-gray-200 rounded-md'>
                                             <span>{dropdownItem.label}</span>
                                         </li>
                                     ))}

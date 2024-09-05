@@ -7,7 +7,7 @@ const Table = () => {
         <div className="overflow-x-auto mt-12">
   <table className="table table-xs">
     <thead>
-      <tr className='bg-blue text-base font-semibold text-center border-0' >
+      <tr className='bg-blue text-base font-semibold text-center' >
         <th>Name</th>
         <th>User ID</th>
         <th>User Status</th>
@@ -18,7 +18,7 @@ const Table = () => {
       </tr>
     </thead>
     <tbody className='text-center bg-white'>
-      <tr className='text-navy-blue border-b-1 border-slate-200'>
+      <tr className='text-navy-blue'>
         <td className='p-5 flex justify-center items-center font-semibold'>Victoria Perez</td>
         <td>LA-0234</td>
         <td>Lorem Ipsum</td>
@@ -29,7 +29,7 @@ const Table = () => {
             <IoMdCheckmarkCircleOutline className=''/> <FiTrash2/> 
         </td>
       </tr>
-      <tr className='text-navy-blue border-b-1 border-slate-200'>
+      <tr className='text-navy-blue'>
         <td className='p-5 flex justify-center items-center font-semibold'>Lena Page</td>
         <td>LA-0234</td>
         <td>Lorem Ipsum</td>
@@ -40,7 +40,7 @@ const Table = () => {
             <IoMdCheckmarkCircleOutline/> <FiTrash2/> 
         </td>
       </tr>
-      <tr className='text-navy-blue border-b-1 border-slate-200'>
+      <tr className='text-navy-blue'>
         <td className='p-5 flex justify-center items-center font-semibold'>Devin Harmor</td>
         <td>LA-0234</td>
         <td>Lorem Ipsum</td>
@@ -51,7 +51,7 @@ const Table = () => {
             <IoMdCheckmarkCircleOutline/> <FiTrash2/> 
         </td>
       </tr>
-      <tr className='text-navy-blue border-b-1 border-slate-200'> 
+      <tr className='text-navy-blue'> 
         <td className='p-5 flex justify-center items-center font-semibold'>Rena Paul</td>
         <td>LA-0234</td>
         <td>Lorem Ipsum</td>
